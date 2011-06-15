@@ -1,0 +1,13 @@
+digraph g {
+overlap = false;
+node [color=black,fillcolor=white,shape=ellipse,style="filled,bold",width=.3, height=.3];
+edge [fontname=Helvetica,fontsize=9];
+"I" -> "III" [label=7];
+"I" -> "II" [label=4, color=red];
+"I" -> "VI" [label=3];
+"II" -> "V" [label=2, color=red];
+"II" -> "III" [label=2];
+"III" -> "IV" [label=2];
+"III" -> "V" [label=1];
+"V" -> "IV" [label=2, color=red];
+}
