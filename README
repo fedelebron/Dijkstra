@@ -20,3 +20,8 @@ i' -> j' k'
 Where an arrow i -> j k means an edge from node i to node j, of weight k. The node indices come from the previous list.
 
 main.c has the city to start the search from, and an optional city to find the shortest distance to, and color a shortest path.
+
+
+The directory C++ contains an implementation in C++ of the same algorithm. The input format is different - it starts with which node is the source, then how many vertices there are, then a list of vertices, and then a series of nodes to which one wants to find the shortest distance, starting from the source.
+
+A sample run of that is ./Dijkstra < grafo.txt. It will list out the shortest distances to the target nodes, or inf if one cannot get to the target node from the source.
